@@ -1,0 +1,22 @@
+<main class="romantic-container">
+  <!-- Glassmorphism Card -->
+  <div class="glass-card">
+    
+    <!-- Decorative Heart -->
+    <div class="icon-heart">❤</div>
+    
+    <!-- Text Area -->
+    <div class="quote-wrapper">
+      <!-- We bind the class.fade-out to the isFading signal -->
+      <h1 [class.fade-out]="isFading()">
+        "{{ currentQuote() }}"
+      </h1>
+    </div>
+
+    <!-- Interactive Button -->
+    <button (click)="generateNewQuote()" class="heart-btn">
+      Show me more love
+    </button>
+    
+  </div>
+</main>
